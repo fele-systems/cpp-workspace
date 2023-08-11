@@ -19,5 +19,5 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         libcapstone-dev libfmt-dev libpugixml-dev \
         clangd
 
-RUN wget https://github.com/conan-io/conan/releases/latest/download/conan-ubuntu-64.deb \
+RUN sudo wget https://github.com/conan-io/conan/releases/latest/download/conan-ubuntu-64.deb \
     && dpkg -i conan-ubuntu-64.deb
