@@ -15,7 +15,9 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"franneck94.vscode-c-cpp-dev-extension-pack",
+				"llvm-vs-code-extensions.vscode-clangd"
 			]
 		}
 	}

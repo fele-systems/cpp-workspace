@@ -16,7 +16,8 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 # Install cool dependencies
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-        libcapstone-dev libfmt-dev libpugixml-dev
+        libcapstone-dev libfmt-dev libpugixml-dev \
+        clangd
 
 RUN wget https://github.com/conan-io/conan/releases/latest/download/conan-ubuntu-64.deb \
     && dpkg -i conan-ubuntu-64.deb
