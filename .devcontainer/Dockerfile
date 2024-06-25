@@ -20,6 +20,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         clangd
 
 # Install conan
-RUN wget -O conan-ubuntu-64.deb https://github.com/conan-io/conan/releases/latest/download/conan-ubuntu-64.deb \
+RUN wget -O conan-ubuntu-64.deb https://github.com/conan-io/conan/releases/download/2.4.1/conan-2.4.1-amd64.deb \
     && dpkg -i conan-ubuntu-64.deb \
     && rm conan-ubuntu-64.deb
